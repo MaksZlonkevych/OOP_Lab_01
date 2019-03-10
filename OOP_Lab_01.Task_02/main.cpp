@@ -1,13 +1,12 @@
 #include <iostream>
 #include <conio.h>
-#include<cstdlib>
 using namespace std;
-// 20v
-class Drobu {
+
+class Drobi {
 private:
 	int x1, y1, x2, y2;
 public:
-	Drobu(int a, int b, int e, int f)
+	Drobi(int a, int b, int e, int f)
 	{
 		x1 = a;
 		y1 = b;
@@ -35,7 +34,7 @@ public:
 		return ((x1 / y1) / (x2 / y2));
 	}
 };
-void count()
+void main()
 {
 	system("chcp 1251");
 	int a, b, e, f;
@@ -51,7 +50,7 @@ void count()
 	cout << endl;
 	cout << "Введіть знаменник другого дробу: ";
 	cin >> f;
-	Drobu A(a, b, e, f);
+	Drobi A(a, b, e, f);
 	cout << endl;
 	int c = 0;
 	int s1, s2;
@@ -73,5 +72,4 @@ void count()
 	cout << "\nДобуток дробів = " << A.product(a, b, e, f) << endl;
 	cout << "\nДілення дробів = " << A.quotient(a, b, e, f) << endl;
 	system("pause");
-
 }
